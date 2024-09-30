@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Greeter</title>
+</head>
+<body>
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name">
+  <button onclick="sayHelloBoss()">Greet me</button>
+  <p id="greeting"></p>
+
+  <script>
+    let names = prompt("what is your name")
+    function sayHelloBoss() {
+      const name = document.getElementById("name").value;
+
+      if (name === "derek") {
+        document.getElementById("greeting")
+        console.log(
+            hello boss
+        )
+      } else {
+        document.getElementById("greeting") 
+        console.log("Hello " + name + "!")}
+    }
+  </script>
+</body>
+</html>

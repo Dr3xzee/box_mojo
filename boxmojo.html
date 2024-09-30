@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .all{
+        background-color: #4C4D4B;
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+    }
+    .twitter{
+        display: flex;
+        
+    }
+    .search{
+        display: flex;
+        height: 30px;
+        right: 100px;
+        position: relative;
+    }
+    .search-logo{
+        background-color: orange;
+        border-radius: 0px 5px 5px 0px;
+        height: 30px;
+    }
+    input{
+        width: 300px;
+        border: 1px solid;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .imbd{
+        margin-top: 15px;
+    }
+    .all2{
+        background-color: black;
+        height: 60px;
+       width: 1200px;
+        display: flex;
+        margin-left: 70px;
+        position: absolute;
+        gap: 30px;
+        margin-top: 100px;
+    }
+    .all2 a{
+        color: aliceblue;
+        text-decoration: none;
+        text-align: center;
+        font-size: xx-large;
+        left: 50px;
+        position: relative;
+    }
+    .all2 a:hover{
+        background-color: aliceblue;
+        color: #000;
+    }
+    .all2 .a1{
+        background-color: white;
+        color: black;
+        height: 60px;
+        align-items: center;
+        display: flex;
+    }
+    .all3{
+        background-color: aliceblue;
+        box-sizing: border-box;
+       text-align: center;
+        box-shadow: 0px 3px 3px 0px rgb(41, 34, 41);
+        font-size: x-large;
+        gap: 30px;
+        display: flex;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 70px;
+        width: 1200px;
+    }
+    .all3 a{
+        color: #000;
+        text-decoration: none;
+        position: relative;
+    }
+    /* .down{
+        display: flex; 
+        flex-direction: column;
+        border: 1px solid gainsboro;
+        width: 300px;
+        padding: 0px;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+    }
+    li{
+        list-style: none;
+    }
+    .th{
+
+    } */
+
+.down{
+    display: flex;
+    margin-left: 90px;
+}
+.down1{
+   justify-content: space-between; 
+}
+.done{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.don{
+    margin-left: 220px;
+}
+li{
+    list-style: none;
+}
+.down a{
+    text-decoration: none;
+    color: cadetblue;
+}
+.do{
+    margin-left: 200px;
+}
+.down2{
+    margin-top: 50px;
+}
+.foo{
+    display: flex;
+    flex-direction: row;
+}
+.down3{
+    margin-top: 50px;
+}
+.down4{
+    margin-top: 50px;
+}
+.down5{
+    margin-top: 50px;
+}
+.down6{
+    margin-top: 50px;
+}
+.up{
+    border-radius: 5px;
+    display: flex;
+}
+.up1{
+    border: 1px solid #BBBFBF;
+    width: 260px;
+    border-radius: 5px;
+    margin-top: 180px;
+    margin-left: 90px;
+}
+.up a{
+    text-decoration: none;
+    color: cadetblue;
+}
+.up2{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid #BBBFBF;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 170px;
+}
+.cool{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    color: #007185;
+    height: 30px;
+    padding-top: 10px;
+}
+.coo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0F2F2;
+    font-size: large;
+    color: #007185;
+    height: 30px;
+    padding-top: 10px;
+}
+.up3{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid #BBBFBF;
+    border-radius: 5px; 
+    margin-top: 170px;
+}
+.dow{
+   display: flex; 
+   flex-direction: row;
+   border: 1px solid wheat;
+   border-radius: 6px;
+}
+.obj{
+    margin-left: 107px;
+    border: 1px solid;
+    width: 800px;
+    height: 300px;
+}
+.no{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.wolvs{
+    margin-left: 0px;
+}
+.header1{
+    width: 1200px;
+    margin-left: 70px;
+    position: absolute;
+}
+.up7{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid #BBBFBF;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+.up8{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid #BBBFBF;
+    border-radius: 5px; 
+}
+</style>
+
+
+
+
+
+
+
+<body>
+    <div class="container">
+
+        <header class="header1">
+          <div class="all"> 
+             <div><img src="dot.png" alt=""></div>  
+        
+           <div class="search"><input type="text" class="s-input" placeholder="search for titles" > <div class="search-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd5JREFUSEu11cvLTWEUx/HPGxnIpSiXiZAwcIuSAQpFL2XqUgxIURhQBv4AMiEhDCgk5Q+Q0VsImSAlopTIgFwi9+uz6nl1HO/e5xnssya7zn7O+j5rrd9v7R5djp4u51cHmIB1WInZ+SJ3cAkX8LzkcgMBRuAcVtck+I2L2IRPdaB2wFDcwgx8xUkcxpOcZDJ2YQuG5LOL8L0K0g44iw14hhV4UPHHWbicLjAeB7G7BDAT9/Aj9Xk+ot91sRhX8A2T8GKgw60VHMF2HMWOkgHiPNYnyF7s7wR4jCm5//cLAUvQh2vpGRX9F60VfEQMeRB+FQJGpWpf4w1GdwK8x3AMQ8BKIs5+wCuM6QS4mw01L3ngdkn2pKQFSW03c5uWdQIcSKbZgxPYVgg4kzyyMbUnBLKzE2AqHuJnoUzDYFdz0sqq2412Ktv/KZYnCT6qqGRONtrY7PatJUaLM62r4guO41B2dryPKmNVbMbgnDRmEK6PYdfKtP/lyGygVTVzeJd20b7U0rWYm12/FPH7P1G3ridml/Yids/nrK4bOIa3CB+E0WKdhwpDSeGJv9HEBycg1zEdsQ0W4mU/oQlA5AqThaKm5fmcbhoQ+cal9b4mfz8abVGtJ5tqUSWk64A/OxFWGSrrSC8AAAAASUVORK5CYII="/></div>
+        </div> 
+        
+        
+        <div class="twitter">
+         <div class="imbd"><img src="image.png" alt=""></div> 
+         <div class="facebook"><img src="facebook.png" alt=""></div> 
+        </div>
+        
+        
+          </div> 
+        </header>
+        
+        <header class="header2">
+        <div class="all2">
+            <a href="" class="a1">Domestic</a>
+            <a href="">International</a>
+            <a href="">Worldwide</a>
+            <a href="">calendar</a>
+            <a href="">all time</a>
+            <a href="">showdown</a>
+            <a href="">Indices</a>
+        </div>
+        </header>
+        
+        <header class="header3">
+            <div class="all3">
+                <a href="">daily</a>
+                <a href="">weekend</a>
+                <a href="">weekly</a>
+                <a href="">Monthly</a>
+                <a href="">Quarterly</a>
+                <a href="">Yearly</a>
+                <a href="">seasons</a>
+                <a href="">Holidays</a>
+            </div>
+        </header>
+        
+        <div class="all4">
+        
+            <div class="up">
+                <div class="up1">
+                    <h2>shortcuts</h2>
+                    <li><a href="">brands</a></li>
+                    <li><a href="">Genres</a></li>
+                    <li><a href="">Franchises</a></li>
+                    <li><a href="">release Schedule</a></li>
+                    <li><a href="">top 2024 Movies</a></li>
+                    <li><a href="">Worldwide 2024</a></li>
+                    <li><a href="">all time (domestic)</a></li>
+                    <li><a href="">all time (Worldwide)</a></li>
+                </div>
+        
+                    <div class="up2">
+                        <h2>last details</h2>
+                        <div class="coo"><div>deadpool & wolverine</div> <div>$4,096,817</div></div>
+                        <div class="cool"><div>Reagan</div><div>$2,650,040</div></div>
+                        <div class="coo"><div>Alien Romulus</div><div>$2,410,138</div></div>
+                        <div class="cool"><div>twisters</div><div>$2,114,190</div></div>
+                        <div class="coo"><div>the forge</div><div>$1,949,626</div></div>
+                        <div class="cool"><div><a href="">more>></a></div></div>
+                    </div>
+        
+                    <div class="up3">
+                        <h2>latest weekend: Aug 30-Sep 1</h2>
+                        <div class="coo"><div>Deadpool & wolverine</div> <div>$15.5M</div></div>
+                        <div class="cool"><div>alien Romulus</div> <div>$9.2m</div></div>
+                        <div class="coo"><div>twisters</div> <div>$7.7M</div></div>
+                        <div class="cool"><div>regen</div> <div>$7.7M</div></div>
+                        <div class="coo"><div>it ends with us</div> <div>$7.4M</div></div>
+                        <div class="cool"><div>more>></div> <div></div></div>
+                    </div>
+            </div>
+        
+            <div>
+        
+            <div class="down">
+                <div class="dow">
+                <div class="down1">
+                    <h4>release Schedule</h4>
+                    <div class="foo"><li><div class="September">September 6,2024  <div class="done">Theaters</div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">icasa bonita mi amor</a> <div class="done"><a href="">Limited</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">let them breathe</a> <div class="done"><a href="">Limited</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">the mother of all..</a> <div class="done"><a href="">Limited</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">unknown title</a> <div class="done"><a href="">Limited</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">the front room</a> <div class="don"><a href="">wide</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">Beetlejuice Beetlejuice </a> <div class="done"><a href="">Limited</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">the thicket</a> <div class="done"><a href="">Limited</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">the Paragon</a> <div class="done"><a href="">Limited</a></div></div></li></div>
+                    <div class="foo"><li><div class="way"><a href="">a new york Story</a> <div class="done"><a href="">Limited</a></div></div></li>
+                </div>
+                
+        
+                <div class="down2">
+                    <li><div class="September">September 11, 2024 <div class="done"><a href="">Theaters</a></div></div></li>
+                    <li><div class="way"><a>the Concierge at Hokkyoku D...</a> <div class="done"><a href="">Limited</a></div></div></li>
+                    <li><div class="way"><a href="">ninja scroll</a> <div class="done"><a href="">Limited</a></div></div></li>
+                </div>
+                
+        
+                <div class="down3">
+                    <li><div class="September">September 12, 2024 <div class="done"><a href="">Theaters</a></div></div></li>
+                    <li><div class="way"><a href="">usher 12: Rendezvous in paris</a> <div class="done"><a href="">Limited</a></div></div></li>
+                    <li><div class="way"><a href="">the faith of angels</a> <div class="done"><a href="">limited</a></div></div></li>
+                    <li><div class="way"><a href="">Gods not dead: in God we Trust</a> <div class="done"><a href="">limited</a></div></div></li>
+                </div>
+        
+                <div class="down4">
+                     <li><div class="September">September 13, 2024 <div class="done">Theaters</div></div></li>
+                     <li><div class="way"><a href="">dan da dan: first encounter</a> <div class="done"><a href="">wide</a><div><a href=""></a></div></div></li>
+                     <li><div class="way"><a href="">im i Racist?</a><div class="done"><a href="">wide</a></div></div></li>
+                     <li><div class="way"><a href="">how to make billions before....</a><div class="done"><a href="">limited</a></div></div></li>
+                     <li><div class="way"><a href="">RIIZE Fan-Con tour RIIZING</a><div class="done"><a href=""></a></div></div></li>
+                     <li><div class="way"><a href="">borderlands: the line Within</a><div class="done"><a href="">limited</a></div></div></li>
+                     <li><div class="way"><a href="">my old ass</a><div class="done"><a href="">limited</a></div></div></li>
+                     <li><div class="way"><a href="">the killers game</a><div class="done"><a href="">limited</a> </div></div></li>
+                     <li><div class="way"><a href="">speak no evil</a><div class="done"><a href="">limited</a></div></div></li>
+                     <li><div class="way"><a href="">Winner</a><div class="done"><a href="">limited</a></div></div></li>
+                    </div>
+        
+                <div class="down5">  
+                    <li><div class="september">september 15, 2024<div class="done">Theaters</div></div></li>
+                    <li><div class="way"><a href="">Blazing saddles</a><div class="done"><a href=""></a></div></div></li>
+                </div>
+        
+               <div class="down6">
+                    <li><div class="september">september 18 2024<div class="done">Theaters</div></div></li>
+                    <li><div class="way"><a href="">trapezium</a><div class="done"><a href="">limited</a></div></div></li>
+                </div>
+        
+            </div>
+            </div>
+        
+            <div class="obj">
+            <div><h2>recent release date changes</h2></div>
+            <div class="coo"><div>Jurassic world Rebirth</div> <div>wide</div> <div>new</div> <div>→	Jul 2, 2025</div></div>
+            <div class="coo"><div>Wolfs</div> <div>limited</div> <div>new</div> <div>→	september 20, 2024</div></div>
+            <div class="coo"><div>Wolfs</div> <div>wide</div> <div>september 20, 2024</div> <div>removed</div></div>
+            <div class="coo"><div>Lumina</div> <div>wide</div> <div>july 12, 2024</div> <div>→	september 20, 2024</div></div>
+            <div class="coo"><div>super/man: the Christopher</div> <div>limited</div> <div>new</div> <div>→	september 21, 2025</div></div>
+        
+        <div class="no">
+            <div class="up7">
+                <h2>last details</h2>
+                <div class="coo"><div>deadpool & wolverine</div> <div>$4,096,817</div></div>
+                <div class="cool"><div>Reagan</div><div>$2,650,040</div></div>
+                <div class="coo"><div>Alien Romulus</div><div>$2,410,138</div></div>
+                <div class="cool"><div>twisters</div><div>$2,114,190</div></div>
+                <div class="coo"><div>the forge</div><div>$1,949,626</div></div>
+                <div class="cool"><div><a href="">more>></a></div></div>
+            </div>
+        
+        
+            <div class="up8">
+                <h2>latest weekend: Aug 30-Sep 1</h2>
+                <div class="coo"><div>Deadpool & wolverine</div> <div>$15.5M</div></div>
+                <div class="cool"><div>alien Romulus</div> <div>$9.2m</div></div>
+                <div class="coo"><div>twisters</div> <div>$7.7M</div></div>
+                <div class="cool"><div>regen</div> <div>$7.7M</div></div>
+                <div class="coo"><div>it ends with us</div> <div>$7.4M</div></div>
+                <div class="cool"><div>more>></div> <div></div></div>
+            </div>
+        </div>
+        
+    </div></div><div class="a-section showdowns-section clear mojo-home-showdowns"><div class="a-section a-spacing-small mojo-column-group"><div class="a-section mojo-column"><div class="a-section mojo-homepage-widget mojo-showdown-teaser"><h4 class="mojo-showdown-teaser-title"><a class="a-link-normal" href="/showdown/sd1329198596/?ref_=bo_hm_sd">Bad Boys v Bad Boys</a></h4><div class="a-row"><div class="a-column a-span6"><a class="a-link-normal" href="/showdown/sd1329198596/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_SX112_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_SX224_CR0,0,224,332_.jpg"/></a>89-Day Total:
+        <br/><span class="money">$193,570,181</span></div><div class="a-column a-span6 a-span-last"><a class="a-link-normal" href="/showdown/sd1329198596/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX112_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX224_CR0,0,224,332_.jpg"/></a>89-Day Total:
+        <br/><span class="money">$204,417,855</span></div></div><a class="a-link-normal mojo-showdowns-vs-link a-text-normal" href="/showdown/sd1329198596/?ref_=bo_hm_sd"><span class="mojo-showdown-teaser-vs">VS</span></a></div></div><div class="a-section mojo-column"><div class="a-section mojo-homepage-widget mojo-showdown-teaser"><h4 class="mojo-showdown-teaser-title"><a class="a-link-normal" href="/showdown/sd1312421380/?ref_=bo_hm_sd">A Quiet Showdown</a></h4><div class="a-row"><div class="a-column a-span6"><a class="a-link-normal" href="/showdown/sd1312421380/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BNGZmODU3ZDEtMjQwZC00NTA5LThmNWYtYzk5MmY5ZmM4NGIxXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SY166_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BNGZmODU3ZDEtMjQwZC00NTA5LThmNWYtYzk5MmY5ZmM4NGIxXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SY332_CR0,0,224,332_.jpg"/></a>68-Day Total:
+        <br/><span class="money">$138,930,553</span></div><div class="a-column a-span6 a-span-last"><a class="a-link-normal" href="/showdown/sd1312421380/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BNjRiYjk4ZmItNGQ5NS00MmRhLTk4Y2EtMGQ1MTYxZWJhYjU0XkEyXkFqcGc@._V1_SX112_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BNjRiYjk4ZmItNGQ5NS00MmRhLTk4Y2EtMGQ1MTYxZWJhYjU0XkEyXkFqcGc@._V1_SX224_CR0,0,224,332_.jpg"/></a>68-Day Total:
+        <br/><span class="money">$158,961,948</span></div></div><a class="a-link-normal mojo-showdowns-vs-link a-text-normal" href="/showdown/sd1312421380/?ref_=bo_hm_sd"><span class="mojo-showdown-teaser-vs">VS</span></a></div></div></div><div class="a-section a-spacing-small mojo-column-group"><div class="a-section mojo-column"><div class="a-section mojo-homepage-widget mojo-showdown-teaser"><h4 class="mojo-showdown-teaser-title"><a class="a-link-normal" href="/showdown/sd1832515076/?ref_=bo_hm_sd">Concert Films Showdown</a></h4><div class="a-row"><div class="a-column a-span6"><a class="a-link-normal" href="/showdown/sd1832515076/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BMTU1Y2EzYTQtNDE2Zi00YmY0LTlhOTMtNjA1NzVlZTczMTFlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY166_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BMTU1Y2EzYTQtNDE2Zi00YmY0LTlhOTMtNjA1NzVlZTczMTFlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY332_CR1,0,224,332_.jpg"/></a>324-Day Total:
+        <br/><span class="money">$180,756,269</span></div><div class="a-column a-span6 a-span-last"><a class="a-link-normal" href="/showdown/sd1832515076/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BMTY0NDQzMjIzOF5BMl5BanBnXkFtZTcwNDk2NzczNA@@._V1_SX112_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BMTY0NDQzMjIzOF5BMl5BanBnXkFtZTcwNDk2NzczNA@@._V1_SX224_CR0,0,224,332_.jpg"/></a>324-Day Total:
+        <br/><span class="money">$73,013,910</span></div></div><a class="a-link-normal mojo-showdowns-vs-link a-text-normal" href="/showdown/sd1832515076/?ref_=bo_hm_sd"><span class="mojo-showdown-teaser-vs">VS</span></a></div></div><div class="a-section mojo-column"><div class="a-section mojo-homepage-widget mojo-showdown-teaser"><h4 class="mojo-showdown-teaser-title"><a class="a-link-normal" href="/showdown/sd3798532/?ref_=bo_hm_sd">Gran Turismo v. Need for Speed</a></h4><div class="a-row"><div class="a-column a-span6"><a class="a-link-normal" href="/showdown/sd3798532/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BMTI1YjFmN2UtOWZhOC00MjkwLTg2ZjgtNDQ5NDQ3YWNmNGRkXkEyXkFqcGdeQXVyMTAxNzQ1NzI@._V1_SX112_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BMTI1YjFmN2UtOWZhOC00MjkwLTg2ZjgtNDQ5NDQ3YWNmNGRkXkEyXkFqcGdeQXVyMTAxNzQ1NzI@._V1_SX224_CR0,0,224,332_.jpg"/></a>293-Day Total:
+        <br/><span class="money">$44,428,554</span></div><div class="a-column a-span6 a-span-last"><a class="a-link-normal" href="/showdown/sd3798532/?ref_=bo_hm_sd"><img alt="" src="https://m.media-amazon.com/images/M/MV5BMTQ3ODY4NzYzOF5BMl5BanBnXkFtZTgwNjI3OTE4MDE@._V1_SY166_CR0,0,112,166_.jpg" height="166" width="112" data-a-hires="https://m.media-amazon.com/images/M/MV5BMTQ3ODY4NzYzOF5BMl5BanBnXkFtZTgwNjI3OTE4MDE@._V1_SY332_CR0,0,224,332_.jpg"/></a>293-Day Total:
+        <br/><span class="money">$43,577,636</span></div></div><a class="a-link-normal mojo-showdowns-vs-link a-text-normal" href="/showdown/sd3798532/?ref_=bo_hm_sd"><span class="mojo-showdown-teaser-vs">VS</span></a></div></div></div><a class="a-link-normal" href="/showdown/?ref_=bo_hm_sd">More &raquo;</a></div></div></div></div></main>
+        <div class="a-section a-spacing-none mojo-navigation-frame"><div class="a-section a-spacing-none mojo-navigation mojo-footer"><a class="a-link-normal imdb-pro-logo" href="https://pro.imdb.com/?ref_=mojo_ft_hm_prologo&amp;rf=mojo_ft_hm_prologo"></a><p>
+</div>
+            
+        </div>
+        
+        
+        </div>
+        </div>
+    
+</body>
+<script src="imet.js">
+
+</script>
+</html>
